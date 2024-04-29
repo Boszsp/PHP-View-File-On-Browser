@@ -49,7 +49,9 @@
 
                 </div>
                 <div class="h-25">
-                    <br>
+                    <?php
+                        echo "<br>";
+                    ?>
                 </div>
             </div>
         </div>
