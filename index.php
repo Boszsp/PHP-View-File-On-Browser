@@ -72,7 +72,7 @@
                     base_href = "/img"
                 }
                 if (base_href != null) {
-                    window.location.href = base_href + "/?src=" + source
+                    window.location.href = base_href + "/?src=" + encodeURIComponent(source)
                 } else {
                     $("#source").addClass("is-invalid")
                     $(".helper-text").show()
