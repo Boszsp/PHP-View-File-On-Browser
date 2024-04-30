@@ -1,5 +1,4 @@
 <?php
-
 if (isset($_GET["src"])) {
     $pathName = strtolower(parse_url(
         json_encode($_GET["src"])
@@ -9,9 +8,9 @@ if (isset($_GET["src"])) {
         $res = file_get_contents($_GET["src"], true);
         echo $res;
     } else {
-        header("location: /");
+        header("location: ..");
         exit(0);
     }
 }
-header("location: /");
+header("location: ..");
 exit(0);

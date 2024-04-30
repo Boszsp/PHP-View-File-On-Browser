@@ -68,13 +68,13 @@
                 let base_href = null
 
                 if (source_path.endsWith(".pdf") || source_path.endsWith(".json")) {
-                    base_href = "/app"
+                    base_href = "app"
                 }
                 if (source_path.endsWith(".webp") || source_path.endsWith(".png") || source_path.endsWith(".jpg") || source_path.endsWith(".jpeg") || source_path.endsWith(".gif") || source_path.endsWith(".svg")) {
-                    base_href = "/img"
+                    base_href = "img"
                 }
                 if (base_href != null) {
-                    window.location.href = base_href + "/?src=" + encodeURIComponent(source)
+                    window.location.href = "./" + base_href + "/?src=" + encodeURIComponent(source)
                 } else {
                     $("#source").addClass("is-invalid")
                     $(".helper-text").show()

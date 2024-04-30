@@ -14,9 +14,9 @@ if (isset($_GET["src"])) {
         echo $res;
         exit(0);
     } else {
-        header("location: /");
+        header("location: ..");
         exit(0);
     }
 }
-header("location: /");
+header("location: ..");
 exit(0);
