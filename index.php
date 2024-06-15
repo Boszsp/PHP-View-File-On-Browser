@@ -53,6 +53,9 @@
                 </div>
             </div>
         </div>
+        <?php
+            echo ""
+        ?>
     </main>
     <script>
         $(".helper-text").hide()
